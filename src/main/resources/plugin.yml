@@ -1,0 +1,40 @@
+main: tk.gimb.verificator.Main
+version: 1.0
+name: GimBVerificator
+database: true
+
+commands:
+  verification:
+    description: Get link for account verification
+    usage: /verification
+    permission: verificator.verification
+    permission-message: ""
+  verify:
+    description: Verify account
+    usage: /verify <code>
+    permission: verificator.verify
+    permission-message: ""
+  identify:
+    description: Get verified player's real name
+    usage: /identify <player>
+    permission: verificator.identify
+    permission-message: ""
+  unverify:
+    description: Un-verify a player
+    usage: /unverify <player>
+    permission: verificator.unverify
+    permission-message: ""
+
+permissions:
+  verificator.verification:
+    description: Allows access to /verification command
+    default: true
+  verificator.verify:
+    description: Allows access to /verify command
+    default: true
+  verificator.identify:
+    description: Allows access to /identify command
+    default: true
+  verificator.unverify:
+    description: Allows access to /unverify command
+    default: op
